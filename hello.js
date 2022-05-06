@@ -6,3 +6,13 @@ const throwError = () => {
     
 }
 
+const displayError = () => {
+    try {
+        throwError()
+    } catch (error) {
+        console.log({
+            error: error
+        })
+    }
+}
+displayError()
